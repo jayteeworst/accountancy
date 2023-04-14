@@ -53,5 +53,8 @@
     </div>        
 </div>
 @endforeach
+
+{{ $products->links() }}
+
 @endguest
 @endsection

@@ -41,4 +41,7 @@
     </div>     
 </div>
 @endforeach
+
+{{ $users->links() }}
+
 @endsection

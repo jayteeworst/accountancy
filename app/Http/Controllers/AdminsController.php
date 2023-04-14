@@ -17,7 +17,7 @@ class AdminsController extends Controller
      */
     public function index()
     {
-        $users = Admin::all();
+        $users = Admin::paginate(5);
         if (!isset(auth()->user()->account_type))
         {
             return view('index');
