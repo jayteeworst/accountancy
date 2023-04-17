@@ -4,7 +4,7 @@
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;Widoki: resources/views/shop/index.blade.php oraz resources/views/admin/index.blade.php
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;TODO wyszukiwanie
+    &nbsp;&nbsp;&nbsp;&nbsp;Wyszukiwanie: Nowy widok resources/views/shop/search.blade.php Formularz w widoku shop/index
 </p>
 <p>
     TODO AJAX
