@@ -28,13 +28,17 @@ Auth::routes(['reset' => false]);
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/search', '\App\Http\Controllers\ProductsController@search')->name('search');
+
+//Route::resource('/search', ProductsController::class);
+
 // Route::get('/admin', function ()
 // {
-//     if (auth()->user()->account_type == 'admin') 
+//     if (auth()->user()->account_type == 'admin')
 //     {
 //         redirect('/admin');
 //     }
-//     else 
+//     else
 //     {
 //         redirect('/');
 //     }

@@ -15,11 +15,24 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        // $products = Product::paginate(3);
+         $products = Product::paginate(3);
 
         return view('shop.index', [
             'products' => $products
         ]);
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('search');
+
+        $products = Product::query()
+            ->where('slug', 'LIKE', "%{$search}%")
+            ->orWhere('name', 'LIKE', "%{$search}%")
+//            ->orWhere('description', 'LIKE', "%{$search}%")
+            ->get();
+
+        return view('shop.search', compact('products'));
     }
 
     /**

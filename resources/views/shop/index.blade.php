@@ -15,12 +15,16 @@
                 <a class="border-b-2 pb-2 mt-6 border-dotted italic text-blue-500" href="shop/create">
                     Dodaj nowy produkt
                 </a>
-                <input type="text" class="mt-6 ml-15 border-2 border-black-500" id="myInput" onkeyup="myFunction()" placeholder="Szukaj...">
-            @endif            
-        @endguest        
+            <br><br><br>
+                <form action="{{ route('search') }}" method="GET">
+                    <input type="text" name="search" required/>
+                    <button type="submit">Szukaj</button>
+                </form>
+            @endif
+        @endguest
     </div>
 </div>
-@guest    
+@guest
 @else
 @foreach ($products as $product)
 <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
@@ -50,7 +54,7 @@
     </div>
     <div>
         <img src="{{ $product->image_path }}" width="350" alt=" {{ $product->slug }}">
-    </div>        
+    </div>
 </div>
 @endforeach
 
