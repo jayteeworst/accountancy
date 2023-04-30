@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -69,5 +70,15 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function checkUsername(Request $request)
+    {        
+        $username = $request->input('name');
+        $isAvailable = !User::where('name', $username)->exists();
+        
+        return response()->json([
+            'is_available' => $isAvailable
+        ]); 
     }
 }

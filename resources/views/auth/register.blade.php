@@ -21,7 +21,8 @@
 
                         <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror"
                             name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
+                        <p name="name-checker">
+                        </p>
                         @error('name')
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}

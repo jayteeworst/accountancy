@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,8 @@ Auth::routes(['reset' => false]);
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/search', '\App\Http\Controllers\ProductsController@search')->name('search');
+
+Route::get('/check-username/{name}', '\App\Http\Controllers\Auth\RegisterController@checkUsername');
 
 //Route::resource('/search', ProductsController::class);
 

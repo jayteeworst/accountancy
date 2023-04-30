@@ -13,3 +13,28 @@
     background-size: cover;
     height: 600px;
 }
+
+.is-valid {
+    border-color: #28a745;
+}
+
+.is-valid::after {
+    content: "Nazwa jest dostępna!";
+    display: block;
+    color: #28a745;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.is-invalid::after{
+    content: "Nazwa jest zajęta";
+    display: block;
+    color: #dc3545;
+}
+
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+}
