@@ -1,3 +1,8 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center">&</p>
+<br>
+<p align="center">Jakub Techman</p>
+
 <p>Stronicowanie:
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;Kontrolery: app/Http/Controllers/ProductsController.php oraz AdminsController.php
@@ -5,6 +10,9 @@
     &nbsp;&nbsp;&nbsp;&nbsp;Widoki: resources/views/shop/index.blade.php oraz resources/views/admin/index.blade.php
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;Wyszukiwanie: Nowy widok resources/views/shop/search.blade.php Formularz w widoku shop/index
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/pDU8Bse.png">
+    <br>
 </p>
 <p>AJAX:
     <br>
@@ -14,12 +22,18 @@
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;Funkcjonalność JS resources/js/app.js
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;W trakcie rejestracji nowego użytkownika za pomocą AJAXa zaimplementowano informowanie użytkownika o tym, czy nazwa użytkownika jest dostępna lub zajęta
+    &nbsp;&nbsp;&nbsp;&nbsp;W trakcie rejestracji nowego użytkownika za pomocą AJAXa zaimplementowano informowanie użytkownika o tym, 
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;czy nazwa użytkownika jest dostępna lub zajęta:
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/QEVR9MZ.png">
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/cuom2cr.png">
+    <br>
 </p>
-<p>
-    TODO CMS
+<p>CMS:
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Zainstalowano i sformatowano podstawowy szablon
+    <br>
 </p>
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-<p align="center">&</p>
-<br>
-<p align="center">Jakub Techman</p>
+
